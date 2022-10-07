@@ -1,0 +1,223 @@
+/* Andrew Bilek */
+/*----CSS RESET----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----FONT----*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+
+/*----VARIABLES----*/
+:root{
+    --apple: #D74452;
+    --teal: #2d838D;
+    --beige: #dad3b7;
+    --orange: #db9f34;
+    --dark-orange: #db8e36;
+}
+/*----SKIP LINK----*/
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+/*----Header----*/
+header{
+    padding: 2em;
+    max-width: calc(100%-1rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--teal);
+    color: var(--beige);
+}
+
+nav{
+    margin-left: auto;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:link{
+    color: var(--beige);
+}
+
+a:visited{
+    color: var(--beige);
+}
+/*----MAIN----*/
+h2{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size:50px;
+    color: var(--apple);
+}
+
+h3{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size:22px;
+    padding:1rem;
+}
+
+h4{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size:30px;
+    color: var(--teal);
+    padding:1rem;
+}
+
+img {
+    width:300px;
+    height:auto;
+}
+
+p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: light;
+    font-size:16px;
+}
+
+address{
+    font-family: 'Comfortaa', cursive;
+    font-weight: light;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#news{
+    text-align:center;
+    padding:1em;
+    color: var(--teal);
+}
+
+#news h2{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding:1em;
+}
+
+#events{
+    text-align:center;
+    padding:1em;
+}
+
+#books{
+    text-align:center;
+    padding:1em;
+}
+
+#freddy, #space, #hello, #plants {
+    max-width:400px;
+    padding:1rem;
+}
+
+#about{
+    text-align:center;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    gap: 20px;
+    background-color: var(--teal);
+    color: var(--beige);
+    height:200px;
+}
+
+footer{
+    background-color: var(--teal);
+    color: var(--beige);
+    padding:2rem;
+    max-height:200px;
+}
+
+label, input{
+    font-family: 'Comfortaa', cursive;
+    font-weight: light;
+    font-size:16px;
+    color: black;
+}
+
+#author h2, #about h2, #author p{
+    color: var(--beige);
+    padding:2rem;
+}
+
+#sanDiego h3, #santaClara h3, #santaBarbara h3, #sanFrancisco h3{
+    color: var(--teal);
+}
+
+#social{
+    display:flex;
+    justify-content:flex-end;
+    padding:2rem;
+    gap:50px;
+    margin-top:-140px;
+}
